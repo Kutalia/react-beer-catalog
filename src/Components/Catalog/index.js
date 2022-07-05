@@ -24,6 +24,8 @@ const Catalog = () => {
         cache[id] = { ...dummyBeer, id };
       } else {
         fetch('https://api.punkapi.com/v2/beers/random')
+          // using "unsafe" variable is a desired effect
+          /*eslint no-loop-func: "off"*/
           .then(response => response.json())
           .then((resp) => {
             const data = resp[0];
