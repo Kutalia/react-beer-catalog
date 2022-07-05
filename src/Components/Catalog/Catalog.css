@@ -10,17 +10,36 @@
   gap: 2rem;
 }
 
+.catalog--mobile {
+  padding: 4rem 2rem;
+}
+
 .beer {
   display: flex;
+  align-items: center;
   width: 320px;
-  padding: 4rem;
+  padding: 2.5rem;
   border: 1px solid blue;
   border-radius: 20px;
   gap: 2rem;
   background: papayawhip;
 }
 
-
 .beer__thumbnail img {
   height: 8rem;
+}
+
+.beer__name {
+  font-weight: bold;
+}
+
+@keyframes loading {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+.loader {
+  text-align: center;
+  font-size: 3rem;
+  animation: loading 1s linear 1s infinite alternate;
 }
