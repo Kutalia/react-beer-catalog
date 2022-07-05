@@ -1,0 +1,26 @@
+.catalog {
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 80vh;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4rem 10rem;
+  gap: 2rem;
+}
+
+.beer {
+  display: flex;
+  width: 320px;
+  padding: 4rem;
+  border: 1px solid blue;
+  border-radius: 20px;
+  gap: 2rem;
+  background: papayawhip;
+}
+
+
+.beer__thumbnail img {
+  height: 8rem;
+}
