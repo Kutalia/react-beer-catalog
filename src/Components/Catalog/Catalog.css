@@ -9,7 +9,7 @@
   padding: 4rem 10rem;
   gap: 2rem;
 }
-
+/* BEM like syntax */
 .catalog--mobile {
   padding: 4rem 2rem;
 }
