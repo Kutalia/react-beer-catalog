@@ -44,7 +44,7 @@ const useBeers = (limit) => {
     if (useDummyData) {
       setBeers(cache);
     }
-  }, []);
+  }, [limit]);
 
   // useMemo compares object reference, so it will work correctly on each `beers` update
   const beersArr = useMemo(() => Object.values(beers), [beers]);
